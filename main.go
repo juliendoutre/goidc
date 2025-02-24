@@ -37,6 +37,7 @@ func main() {
 	os.Exit(run(*provider, *port, *decode))
 }
 
+//nolint:cyclop,funlen
 func run(providerURL string, port uint64, decode bool) int {
 	ctx := context.Background()
 
