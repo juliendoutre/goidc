@@ -1,0 +1,12 @@
+linters:
+  enable-all: true
+  disable:
+    - tenv # Deprecated
+    - exhaustruct # Too noisy
+linters-settings:
+  depguard:
+    rules:
+      main:
+        allow:
+          - $gostd
+          - github.com
