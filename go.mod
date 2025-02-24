@@ -9,6 +9,6 @@ require (
 
 require (
 	github.com/pquerna/cachecontrol v0.2.0 // indirect
-	golang.org/x/crypto v0.25.0 // indirect
+	golang.org/x/crypto v0.31.0 // indirect
 	gopkg.in/go-jose/go-jose.v2 v2.6.3 // indirect
 )
