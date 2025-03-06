@@ -5,20 +5,20 @@
 class Goidc < Formula
   desc ""
   homepage ""
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/juliendoutre/goidc/releases/download/v0.2.0/goidc_Darwin_x86_64.tar.gz"
-      sha256 "b81b8cca91f9f4c2367b48597b0032adfa06b9a3a66c1b01c8b689535e4dac93"
+      url "https://github.com/juliendoutre/goidc/releases/download/v0.3.0/goidc_Darwin_x86_64.tar.gz"
+      sha256 "0409f59608c5b599e115b17a1d21af2e76a9203675064d984ee96eedbcafc422"
 
       def install
         bin.install "goidc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/juliendoutre/goidc/releases/download/v0.2.0/goidc_Darwin_arm64.tar.gz"
-      sha256 "543ae6a6eb9fd4d043c6da89c6f5fd770141f726b02c9b29f19ad8c2429d9615"
+      url "https://github.com/juliendoutre/goidc/releases/download/v0.3.0/goidc_Darwin_arm64.tar.gz"
+      sha256 "ccdd1152dc9b2dd4e97f0909f317c1febdbe34f6a5044597219e6be1c7bf9d65"
 
       def install
         bin.install "goidc"
@@ -29,8 +29,8 @@ class Goidc < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/juliendoutre/goidc/releases/download/v0.2.0/goidc_Linux_x86_64.tar.gz"
-        sha256 "f9247510393cfc5cdce5b146109eb0a83d415c0ddd82d1048f98885915b4ea41"
+        url "https://github.com/juliendoutre/goidc/releases/download/v0.3.0/goidc_Linux_x86_64.tar.gz"
+        sha256 "cdf858bf19f553e43a6d36abfc4d8deb2e83baded59f528e5065b35a2684acc8"
 
         def install
           bin.install "goidc"
@@ -39,8 +39,8 @@ class Goidc < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/juliendoutre/goidc/releases/download/v0.2.0/goidc_Linux_arm64.tar.gz"
-        sha256 "592a2dd471aa9e6e7decd03ce4c51b8803c9e8255cfc4ae42dcad31d002ae7cf"
+        url "https://github.com/juliendoutre/goidc/releases/download/v0.3.0/goidc_Linux_arm64.tar.gz"
+        sha256 "c575fa7331e65c0b7f1bb8ea9fb48fae14e288745967d37a8ad3eb4c1ac1aa75"
 
         def install
           bin.install "goidc"
