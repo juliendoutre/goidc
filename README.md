@@ -23,8 +23,9 @@ goidc -version
 ### Lint the code
 
 ```shell
-brew install golangci-lint
+brew install golangci-lint hadolint
 golangci-lint run
+hadolint ./Dockerfile
 ```
 
 ### Release a new version
