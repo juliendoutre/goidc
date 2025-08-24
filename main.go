@@ -19,6 +19,7 @@ import (
 var (
 	version = "unknown"
 	commit  = "unknown" //nolint:gochecknoglobals
+	date    = "unknown" //nolint:gochecknoglobals
 )
 
 func main() {
@@ -29,7 +30,7 @@ func main() {
 	flag.Parse()
 
 	if *showVersion {
-		fmt.Fprintf(os.Stdout, "proxaudit %s (%s)\n", version, commit)
+		fmt.Fprintf(os.Stdout, "proxaudit v%s, commit %s, build date %s\n", version, commit, date)
 
 		return
 	}
